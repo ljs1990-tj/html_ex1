@@ -86,14 +86,12 @@
         if(phone.length != 11){
             alert("핸드폰 숫자는 11글자!");
             return;
-        }
-        
+        }       
         let phonePattern = /^[0-9]*$/;
         if(!phonePattern.test(phone)){
             alert("핸드폰번호는 숫자만!");
             return;
         }
-
         let subList = document.querySelectorAll("input[name='subject']:checked");
         if(subList.length < 1){
             if(!confirm("관심 과목 선택안했음. 계속 진행?")){
